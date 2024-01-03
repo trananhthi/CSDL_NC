@@ -1,6 +1,8 @@
 ﻿using DentalClinicManagement;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +25,29 @@ namespace DentalClinicManagement.Account
 
     public partial class Home : Page
     {
+        private DB db;
         public Home()
         {
+            
             InitializeComponent();
+            try
+            {
+                db = new DB();
+                using (SqlConnection connection = db.Connection)
+                {
+                    string query = $"select * from BENHAN";
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    DataRow row = dataTable.Rows[0];
+                    test.Text = row["MaBenhNhan"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
 
         private void WindowLoaded(object sender, RoutedEventArgs e)

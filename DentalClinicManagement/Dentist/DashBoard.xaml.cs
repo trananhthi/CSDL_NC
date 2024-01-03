@@ -22,7 +22,9 @@ namespace DentalClinicManagement.Dentist
     {
         public DashBoard()
         {
+            
             InitializeComponent();
+            
         }
 
         private void view_appointment_btn_Click(object sender, RoutedEventArgs e)
@@ -49,6 +51,7 @@ namespace DentalClinicManagement.Dentist
             {
                 MessageBox.Show("Null");
             }
+
         }
 
         private void ReceivePatient(object sender, RoutedEventArgs e)
