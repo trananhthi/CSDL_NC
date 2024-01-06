@@ -65,6 +65,17 @@ namespace DentalClinicManagement.Dentist
             }
         }
 
+        private void SeePatient(object sender, RoutedEventArgs e)
+        {
+            MainWindow? mainWindow = Application.Current.MainWindow as MainWindow;
+
+
+            if (mainWindow != null && mainWindow.MainFrame != null)
+            {
+                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Dentist.SeePatient());
+            }
+        }
+
         private void AddRecord(object sender, RoutedEventArgs e)
         {
             MainWindow? mainWindow = Application.Current.MainWindow as MainWindow;
