@@ -39,8 +39,13 @@ namespace DentalClinicManagement.Dentist
 
         private void AddUpdatePatient_Click(object sender, RoutedEventArgs e)
         {
-            // Implement logic to add or update patient information
-            MessageBox.Show("Adding/Updating Patient Information");
+            MainWindow? mainWindow = Application.Current.MainWindow as MainWindow;
+
+
+            if (mainWindow != null && mainWindow.MainFrame != null)
+            {
+                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Dentist.SeePatientList());
+            }
         }
 
         private void SeePatientRecord_Click(object sender, RoutedEventArgs e)

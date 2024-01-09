@@ -33,7 +33,7 @@ namespace DentalClinicManagement.Dentist
                 db = new DB();
                 using (SqlConnection connection = db.Connection)
                 {
-                    string query = $"SELECT * FROM BENHNHAN";
+                    string query = $"EXEC dbo.sp_seepatientlist";
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
 
                     DataTable dataTable = new DataTable();
@@ -49,6 +49,9 @@ namespace DentalClinicManagement.Dentist
             }
 
         }
+
     }
 
 }
+
+
