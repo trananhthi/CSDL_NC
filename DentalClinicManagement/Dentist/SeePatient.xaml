@@ -19,5 +19,18 @@
             <!-- Button to see patient record -->
             <Button Content="See Patient Record" Width="150" Height="30" Margin="5" Click="SeePatientRecord_Click"/>
         </StackPanel>
+        <Button Click="backHome" Content="Quay lại" FontFamily="Segoe UI Semibold" IsDefault="True" FontSize="18" BorderBrush="#FFABABAB" BorderThickness="0,0,0,0" Margin="264,320,266,81" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="24"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="3" BlurRadius="10" Color="Gray"/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Page>

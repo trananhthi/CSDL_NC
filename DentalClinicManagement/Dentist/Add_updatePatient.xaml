@@ -80,7 +80,7 @@
                 </Button>
 
                 <!-- Label và TextBox -->
-                <TextBox Width="580" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="399" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" TextWrapping="Wrap" >
+                <TextBox x:Name="Location" Width="580" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="399" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" TextWrapping="Wrap" >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -90,7 +90,7 @@
                         <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                     </TextBox.BorderBrush>
                 </TextBox>
-                <TextBox Width="250" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="275" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" >
+                <TextBox x:Name="Birthday" Width="250" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="275" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -100,7 +100,7 @@
                         <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                     </TextBox.BorderBrush>
                 </TextBox>
-                <TextBox Width="580" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="175" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" >
+                <TextBox x:Name="Name" Width="580" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="175" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -110,7 +110,7 @@
                         <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                     </TextBox.BorderBrush>
                 </TextBox>
-                <TextBox Width="250" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="75" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" >
+                <TextBox x:Name="ID" Width="250" Height="40" FontSize="18" Canvas.Left="46" Canvas.Top="75" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -125,7 +125,7 @@
                 <Label Content="Họ và Tên" Canvas.Left="46" Canvas.Top="138" FontSize="20" FontFamily="Segoe UI Semibold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <Label Content="Ngày sinh" Canvas.Left="46" Canvas.Top="238" FontSize="20" FontFamily="Segoe UI Semibold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <Label Content="Địa chỉ" Canvas.Left="46" Canvas.Top="362" FontSize="20" FontFamily="Segoe UI Semibold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBox Width="256" Height="40" FontSize="18" Canvas.Left="370" Canvas.Top="75" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" >
+                <TextBox x:Name="Phone" Width="256" Height="40" FontSize="18" Canvas.Left="370" Canvas.Top="75" BorderThickness="2.5,2.5,2.5,2.5" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
@@ -135,7 +135,7 @@
                         <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                     </TextBox.BorderBrush>
                 </TextBox>
-                <TextBox Width="250" Height="40" FontSize="18" Canvas.Left="385" Canvas.Top="274" BorderThickness="2.5,2.5,2.5,2.5" VerticalContentAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <TextBox x:Name="Sex" Width="250" Height="40" FontSize="18" Canvas.Left="385" Canvas.Top="274" BorderThickness="2.5,2.5,2.5,2.5" VerticalContentAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" >
                     <TextBox.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>

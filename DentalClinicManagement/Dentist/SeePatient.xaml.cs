@@ -44,7 +44,7 @@ namespace DentalClinicManagement.Dentist
 
             if (mainWindow != null && mainWindow.MainFrame != null)
             {
-                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Dentist.SeePatientList());
+                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Dentist.Add_updatePatient());
             }
         }
 
@@ -52,6 +52,17 @@ namespace DentalClinicManagement.Dentist
         {
             // Implement logic to show a specific patient's record
             MessageBox.Show("Showing Patient Record");
+        }
+
+        private void backHome(object sender, RoutedEventArgs e)
+        {
+            MainWindow? mainWindow = Application.Current.MainWindow as MainWindow;
+
+
+            if (mainWindow != null && mainWindow.MainFrame != null)
+            {
+                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Dentist.DashBoard());
+            }
         }
     }
 }

@@ -15,7 +15,7 @@ namespace DentalClinicManagement
         private static DB? _instance = null;
         private SqlConnection _connection = null;
 
-        public string ConnectionString { get; set; } = "Server=tcp:sqldatabase-csdlnc.database.windows.net,1433;Initial Catalog=QL_PK;Persist Security Info=False;User ID=rongcon;Password=Phu110701;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        public string ConnectionString { get; set; } = "Server=tcp:sqldatabase-csdlnc.database.windows.net,1433;Initial Catalog=QL_PK;Persist Security Info=False;User ID=rongcon;Password=Phu110701;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=100;";
 
         
         public void ImportDataToSQL()

@@ -4,13 +4,25 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DentalClinicManagement.Dentist"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="SeePatientList">
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="SeePatientList" Height="480">
 
-    
+
     <Grid>
-        <Label Content="Patient List" HorizontalAlignment="Left" Height="19" Margin="10" VerticalAlignment="Top" Width="774"/>
-        <DataGrid x:Name="patientDataGrid" HorizontalAlignment="Left" VerticalAlignment="Center" Height="700" Width="900"/>
+        <Label Content="Patient List" HorizontalAlignment="Left" Height="29" Margin="-2,0,0,0" VerticalAlignment="Top" Width="796"/>
+        <DataGrid x:Name="patientDataGrid" HorizontalAlignment="Center" VerticalAlignment="Top" Height="404" Width="800" Margin="0,30,0,0"/>
+        <Button Click="backHome" Content="Quay lại" FontFamily="Segoe UI Semibold" IsDefault="True" FontSize="18" BorderBrush="#FFABABAB" BorderThickness="0,0,0,0" Margin="3,440,629,8" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="24"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="3" BlurRadius="10" Color="Gray"/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Page>
