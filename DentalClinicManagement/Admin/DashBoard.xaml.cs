@@ -27,14 +27,25 @@ namespace DentalClinicManagement.Admin
         }
 
 
-        private void viewAccount(object sender, RoutedEventArgs e)
+        private void viewDentist(object sender, RoutedEventArgs e)
         {
             MainWindow? mainWindow = Application.Current.MainWindow as MainWindow;
 
 
             if (mainWindow != null && mainWindow.MainFrame != null)
             {
-                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Admin.AccountManagement());
+                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Admin.SeeDentistList());
+            }
+        }
+
+        private void viewEmployee(object sender, RoutedEventArgs e)
+        {
+            MainWindow? mainWindow = Application.Current.MainWindow as MainWindow;
+
+
+            if (mainWindow != null && mainWindow.MainFrame != null)
+            {
+                mainWindow.MainFrame.Navigate(new DentalClinicManagement.Admin.SeeEmployeeList());
             }
         }
 
